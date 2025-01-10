@@ -24,7 +24,7 @@ jobs:
 
     - name: Test application
       run: |
-        sleep 10 # Czekamy, aż aplikacja się uruchomi
+        sleep 10
         curl -f http://localhost:8080 || exit 1
 
     - name: Stop and remove container
